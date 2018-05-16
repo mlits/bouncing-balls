@@ -58,15 +58,15 @@ Ball.prototype.update = function() {
 
 // define ball collision detection
 
-Ball.prototype.collisionDetect = function() {
-  for(var j = 0; j < balls.length; j++) {
-    if(!(this === balls[j])) {
-      var dx = this.x - balls[j].x;
-      var dy = this.y - balls[j].y;
+Ball.prototype.collisionDetect = function(ballsArr) {
+  for(var j = 0; j < ballsArr.length; j++) {
+    if(!(this === ballsArr[j])) {
+      var dx = this.x - ballsArr[j].x;
+      var dy = this.y - ballsArr[j].y;
       var distance = Math.sqrt(dx * dx + dy * dy);
 
-      if (distance < this.size + balls[j].size) {
-        balls[j].color = this.color = 'rgb(' + random(0,255) + ',' + random(0,255) + ',' + random(0,255) +')';
+      if (distance < this.size + ballsArr[j].size) {
+        ballsArr[j].color = this.color = 'rgb(' + random(0,255) + ',' + random(0,255) + ',' + random(0,255) +')';
       }
     }
   }
@@ -97,7 +97,7 @@ function loop() {
   for(var i = 0; i < balls.length; i++) {
     balls[i].draw();
     balls[i].update();
-    balls[i].collisionDetect();
+    balls[i].collisionDetect(balls);
   }
 
   requestAnimationFrame(loop);
