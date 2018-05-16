@@ -8,6 +8,10 @@ var ctx = canvas.getContext('2d');
 var width = canvas.width = window.innerWidth;
 var height = canvas.height = window.innerHeight;
 
+window.addEventListener('resize', function(){
+  width = canvas.width = window.innerWidth;
+  height = canvas.height = window.innerHeight;
+})
 
 // define Ball constructor
 
