@@ -35,8 +35,8 @@ Ball.prototype.draw = function() {
 
 // define ball update method
 
-Ball.prototype.update = function() {
-  if((this.x + this.size) >= width) {
+Ball.prototype.update = function(screenSize) {
+  if((this.x + this.size) >= screenSize.width) {
     this.velX = -(this.velX);
   }
 
@@ -44,7 +44,7 @@ Ball.prototype.update = function() {
     this.velX = -(this.velX);
   }
 
-  if((this.y + this.size) >= height) {
+  if((this.y + this.size) >= screenSize.height) {
     this.velY = -(this.velY);
   }
 
@@ -75,6 +75,7 @@ Ball.prototype.collisionDetect = function(ballsArr) {
 // define array to store balls
 
 var balls = [];
+var screenSize = {width:width,height:height};
 
 // define loop that keeps drawing the scene constantly
 
@@ -96,7 +97,7 @@ function loop() {
 
   for(var i = 0; i < balls.length; i++) {
     balls[i].draw();
-    balls[i].update();
+    balls[i].update(screenSize);
     balls[i].collisionDetect(balls);
   }
 
