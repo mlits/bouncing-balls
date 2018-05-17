@@ -1,4 +1,4 @@
-# Parcel demo
+# Bouncing Balls
 
 [![Build Status](https://travis-ci.org/gerkirill/bouncing-balls.svg?branch=master)](https://travis-ci.org/gerkirill/bouncing-balls)
 
