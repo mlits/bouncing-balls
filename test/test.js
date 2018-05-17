@@ -1,5 +1,5 @@
-var assert = require('assert');
-var random = require('../random');
+import * as assert from 'assert';
+import { random } from '../js/modules/random';
 
 function equalRandom(min, max) {
     for (let i=0; i<10000; i++) {
