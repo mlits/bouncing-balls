@@ -14,7 +14,7 @@ Then open http://localhost:1234/ in your browser.
 
 ## Build
 ```
-parcel build index.html
+npm run build
 ```
 
 ## Test
