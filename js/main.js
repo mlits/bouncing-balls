@@ -1,6 +1,8 @@
-// setup canvas
+// import of modules
+import { random } from './modules/random';
+import { Ball } from './modules/ball';
 
-import { random } from './random';
+// setup canvas
 
 var canvas = document.querySelector('canvas');
 var ctx = canvas.getContext('2d');
@@ -12,17 +14,6 @@ window.addEventListener('resize', function(){
   width = canvas.width = window.innerWidth;
   height = canvas.height = window.innerHeight;
 })
-
-// define Ball constructor
-
-function Ball(x, y, velX, velY, color, size) {
-  this.x = x;
-  this.y = y;
-  this.velX = velX;
-  this.velY = velY;
-  this.color = color;
-  this.size = size;
-}
 
 // define ball draw method
 
