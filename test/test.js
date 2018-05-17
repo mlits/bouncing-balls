@@ -1,8 +1,8 @@
 var assert = require('assert');
-var random = require('../random').default;
+var random = require('../random');
 
 function equalRandom(min, max) {
-    for (let i=0; i<1000; i++) {
+    for (let i=0; i<10000; i++) {
 
         const val = random(min, max);
         const res = (val < min || val > max);
@@ -26,7 +26,8 @@ describe("bouncing-balls", function () {
             equalRandom(-1, -1);
             equalRandom(1, 1);
             equalRandom(1, 10);
-            equalRandom(-10, 1);
+            equalRandom(-10, -1);
+            equalRandom(-100, 100);
         });
     })
 })
