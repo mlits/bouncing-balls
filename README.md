@@ -6,7 +6,6 @@
 - make sure you have [nodejs](https://nodejs.org/) installed
 - make sure you have [parcel](https://parceljs.org/) globally installed
 
-```
 ## Run
 ```
 parcel index.html
