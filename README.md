@@ -9,16 +9,16 @@
 ```
 ## Run
 ```
-`parcel index.html`
+parcel index.html
 ```
 Then open http://localhost:1234/ in your browser.
 
 ## Build
 ```
-`parcel build index.html`
+parcel build index.html
 ```
 
 ## Test
 ```
-`npm test`
+npm test
 ```
