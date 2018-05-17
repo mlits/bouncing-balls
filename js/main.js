@@ -9,16 +9,16 @@ const ctx = canvas.getContext('2d');
 
 let width = canvas.width = window.innerWidth;
 let height = canvas.height = window.innerHeight;
+let screenSize = {width, height};
 
 window.addEventListener('resize', () => {
-	width = canvas.width = window.innerWidth;
-	height = canvas.height = window.innerHeight;
+	width = canvas.width = screenSize.width = window.innerWidth;
+	height = canvas.height = screenSize.height = window.innerHeight;
 });
 
 // define array to store balls
 
 const balls = [];
-const screenSize = { width, height };
 
 // define loop that keeps drawing the scene constantly
 
