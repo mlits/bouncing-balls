@@ -8,5 +8,14 @@
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module"
+  },
+  "rules": {
+    "import/prefer-default-export": false,
+    "comma-dangle": 0,
+    "no-plusplus": 0,
+    "func-names": 0,
+    "no-mixed-operators": 0,
+    "no-multi-assign": 0,
+    "no-param-reassign": 0
   }
 }
