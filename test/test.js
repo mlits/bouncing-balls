@@ -12,9 +12,11 @@ function equalRandom(min, max) {
 
 function equalСollisionDetect(ballsArr, shouldColorChange, color) {
   let changeCount = 0;
+  let curColor = color;
   for (let i = 0; i < 10000; i++) {
     ballsArr[0].collisionDetect(ballsArr);
-    if (color !== ballsArr[0].color) {
+    if (curColor !== ballsArr[0].color) {
+      curColor = ballsArr[0].color;
       changeCount++;
     }
     assert.equal(ballsArr[0].color, ballsArr[1].color, 'Errors: colors in balls are not identical');
