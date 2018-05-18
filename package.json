@@ -4,7 +4,7 @@
     "prebuild": "shx rm -rf dist/*",
     "build": "parcel build index.html --public-url .",
     "test": "run-s lint build mocha",
-    "lint": "eslint js/ test/",
+    "lint": "eslint --ignore-path .gitignore .",
     "mocha": "ts-mocha"
   },
   "dependencies": {},
