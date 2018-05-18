@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "start": "parcel index.html",
     "prebuild": "shx rm -rf dist/*",
     "build": "parcel build index.html",
     "test": "run-s lint build mocha",

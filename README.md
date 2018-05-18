@@ -8,7 +8,8 @@
 
 ## Run
 ```
-parcel index.html
+npm install
+npm start
 ```
 Then open http://localhost:1234/ in your browser.
 
