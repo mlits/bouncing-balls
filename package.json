@@ -2,7 +2,7 @@
   "scripts": {
     "start": "parcel index.html",
     "prebuild": "shx rm -rf dist/*",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --public-url .",
     "test": "run-s lint build mocha",
     "lint": "eslint js/ test/",
     "mocha": "ts-mocha"
