@@ -7,7 +7,7 @@ function equalRandom(min, max) {
       const res = (val < min || val > max);
       assert.equal(res, false, `Errors: min=${min}, max=${max}, return value=${val}, ${res}`);
     }
-  };
+  }
 
 describe('bouncing-balls', () => {
     it('random', () => {
