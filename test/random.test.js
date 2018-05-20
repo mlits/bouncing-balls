@@ -10,7 +10,6 @@ function equalRandom(min, max) {
 }
 
 describe('bouncing-balls', () => {
-<<<<<<< HEAD
     it('random', () => {
       equalRandom(-10, 10);
       equalRandom(0, 10);
@@ -23,17 +22,3 @@ describe('bouncing-balls', () => {
       equalRandom(-100, 100);
     });
   });
-=======
-  it('random', () => {
-    equalRandom(-10, 10);
-    equalRandom(0, 10);
-    equalRandom(-10, 0);
-    equalRandom(0, 0);
-    equalRandom(-1, -1);
-    equalRandom(1, 1);
-    equalRandom(1, 10);
-    equalRandom(-10, -1);
-    equalRandom(-100, 100);
-  });
-});
->>>>>>> 73c67a7a5214339484c204faf28e7a28b01d3d26
