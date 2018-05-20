@@ -30,8 +30,8 @@ function loop() {
     const ball = new Ball(
       random(0, width),
       random(0, height),
-      random(-7, 7),
-      random(-7, 7),
+      random(-7, 7, 0),
+      random(-7, 7, 0),
       `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`,
       random(10, 20)
     );
