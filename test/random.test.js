@@ -11,14 +11,14 @@ function equalRandom(min, max) {
 
 describe('bouncing-balls', () => {
     it('random', () => {
-        equalRandom(-10, 10);
-        equalRandom(0, 10);
-        equalRandom(-10, 0);
-        equalRandom(0, 0);
-        equalRandom(-1, -1);
-        equalRandom(1, 1);
-        equalRandom(1, 10);
-        equalRandom(-10, -1);
-        equalRandom(-100, 100);
-      });
+      equalRandom(-10, 10);
+      equalRandom(0, 10);
+      equalRandom(-10, 0);
+      equalRandom(0, 0);
+      equalRandom(-1, -1);
+      equalRandom(1, 1);
+      equalRandom(1, 10);
+      equalRandom(-10, -1);
+      equalRandom(-100, 100);
     });
+  });
