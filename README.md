@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://gerkirill.github.io/bouncing-balls/" target="_blank">
-    <img alt="Bouncing Balls" src="https://gerkirill.github.io/bouncing-balls/preview.jpg" width="500" height="300">
+    <img alt="Bouncing Balls" src="https://gerkirill.github.io/preview.e445f270.jpg" width="500" height="300">
   </a>
 </p>npm
 
