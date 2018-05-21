@@ -48,15 +48,15 @@ export class Ball {
   }
 
   // define ball collision detection
-  collisionDetect(ballsArr) {
-    for (let j = 0; j < ballsArr.length; j++) {
-      if (!(this === ballsArr[j])) {
-        const dx = this.x - ballsArr[j].x;
-        const dy = this.y - ballsArr[j].y;
+  collisionDetect(balls) {
+    for (let j = 0; j < balls.length; j++) {
+      if (!(this === balls[j])) {
+        const dx = this.x - balls[j].x;
+        const dy = this.y - balls[j].y;
         const distance = Math.sqrt(dx * dx + dy * dy);
 
-        if (distance < this.size + ballsArr[j].size) {
-          ballsArr[j].color = this.color = `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
+        if (distance < this.size + balls[j].size) {
+          balls[j].color = this.color = `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
         }
       }
     }
