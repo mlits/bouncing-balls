@@ -26,7 +26,7 @@ export class Ball {
       if (this.velX > 0) {
         this.velX = -(this.velX);
       }
-      //this.velX = -(this.velX);
+      // this.velX = -(this.velX);
     }
 
     if ((this.x - this.size) <= 0) {
