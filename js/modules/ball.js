@@ -23,7 +23,10 @@ export class Ball {
   // define ball update method
   update(screenSize) {
     if ((this.x + this.size) >= screenSize.width) {
-      this.velX = -(this.velX);
+      if (this.velX > 0) {
+        this.velX = -(this.velX);
+      }
+      //this.velX = -(this.velX);
     }
 
     if ((this.x - this.size) <= 0) {
@@ -31,7 +34,9 @@ export class Ball {
     }
 
     if ((this.y + this.size) >= screenSize.height) {
-      this.velY = -(this.velY);
+      if (this.velY > 0) {
+        this.velY = -(this.velY);
+      }
     }
 
     if ((this.y - this.size) <= 0) {
