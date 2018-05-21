@@ -5,4 +5,4 @@ parcelRequire=function(e,r,n,t){function i(n,t){function o(e){return i(o.resolve
 },{"./random":12}],8:[function(require,module,exports) {
 "use strict";var e=require("./modules/random"),n=require("./modules/ball"),i=document.querySelector("canvas"),r=i.getContext("2d"),t=i.width=window.innerWidth,d=i.height=window.innerHeight,o={width:t,height:d};window.addEventListener("resize",function(){t=i.width=o.width=window.innerWidth,d=i.height=o.height=window.innerHeight});var a=[];function h(){for(r.fillStyle="rgba(0,0,0,1)",r.fillRect(0,0,t,d);a.length<25;){var i=new n.Ball((0,e.random)(20,t-20),(0,e.random)(20,d-20),(0,e.random)(-7,7,0),(0,e.random)(-7,7,0),"rgb("+(0,e.random)(0,255)+","+(0,e.random)(0,255)+","+(0,e.random)(0,255)+")",(0,e.random)(10,20));a.push(i)}for(var l=0;l<a.length;l++)a[l].draw(r),a[l].update(o),a[l].collisionDetect(a);requestAnimationFrame(h)}h();
 },{"./modules/random":12,"./modules/ball":13}]},{},[8], null)
-//# sourceMappingURL=main.d4f36f0d.map
+//# sourceMappingURL=main.4dd88e0f.map
