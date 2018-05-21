@@ -19,5 +19,7 @@ describe('bouncing ball', () => {
     spacedBalls[0].collisionDetect(spacedBalls);
     assert.equal(spacedBalls[0].color, 'rgb(0, 0, 0)');
     assert.equal(spacedBalls[1].color, 'rgb(200, 200, 200)');
+    assert.equal(spacedBalls[0].size, 5);
+    assert.equal(spacedBalls[1].size, 5);
   });
 });
