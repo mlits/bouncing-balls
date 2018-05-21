@@ -1,7 +1,5 @@
 // import of modules
-import {
-  random
-} from './random';
+import { random } from './random';
 
 // define Ball constructor
 export class Ball {
@@ -44,7 +42,7 @@ export class Ball {
     this.y += this.velY;
   }
 
-  // define ball collision detection  
+  // define ball collision detection
   collisionDetect(balls) {
     for (let j = 0; j < balls.length; j++) {
       if (!(this === balls[j])) {
